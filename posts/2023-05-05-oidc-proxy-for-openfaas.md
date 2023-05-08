@@ -94,7 +94,9 @@ Then run:
 helm repo add actuated https://self-actuated.github.io/charts/
 helm repo update
 
-helm upgrade --install actuated/openfaas-oidc-proxy \
+helm upgrade openfaas-oidc-proxy actuated/openfaas-oidc-proxy \
+    --install \
+    --namespace openfaas \
     -f ./values.yaml
 ```
 
