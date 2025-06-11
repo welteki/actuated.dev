@@ -28,7 +28,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "predeploy": "npm run build",
+    "predeploy": "npm install && npm run build",
     "deploy": "gh-pages --dotfiles -d build"
   },
   "eslintConfig": {
